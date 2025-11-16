@@ -3,13 +3,11 @@
  ***********************************************/
 :root {
     --primary-color: #191b72;     /* Royal blue */
-    --secondary-color: #004529;   /* Forest green */
     --accent1-color: #264653;     /* Dark slate blue */
     --accent2-color: #f1f0eb;     /* Light gray */
-
+    
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-
     --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     --soft-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
