@@ -5,7 +5,7 @@
     --primary-color: #191b72;     /* Royal blue */
     --accent1-color: #264653;     /* Dark slate blue */
     --accent2-color: #f1f0eb;     /* Light gray */
-    
+
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -16,11 +16,7 @@
 /***********************************************
  * 2. GLOBAL RESETS & BASE STYLING
  ***********************************************/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     margin: 0 auto;
