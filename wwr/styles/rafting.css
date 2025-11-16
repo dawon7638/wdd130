@@ -1,0 +1,186 @@
+/***********************************************
+ * 1. ROOT VARIABLES
+ ***********************************************/
+:root {
+    --primary-color: #191b72;     /* Royal blue */
+    --secondary-color: #004529;   /* Forest green */
+    --accent1-color: #264653;     /* Dark slate blue */
+    --accent2-color: #f1f0eb;     /* Light gray */
+
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    --soft-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/***********************************************
+ * 2. GLOBAL RESETS & BASE STYLING
+ ***********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    line-height: 1.6;
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p, section, article, nav {
+    padding: 8px;
+}
+
+
+/***********************************************
+ * 3. HEADER
+ ***********************************************/
+header {
+    padding: 1em;
+    margin: 0 auto;
+}
+
+header nav {
+    padding: 1em 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add spacing and subtle shadow */
+header {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: var(--soft-shadow);
+}
+
+
+/***********************************************
+ * 4. HERO SECTION
+ ***********************************************/
+.hero {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Title Overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.75);
+    color: #fff;
+    font-size: 2rem;
+    backdrop-filter: blur(2px);
+}
+
+/* Hero Article Box */
+.hero article {
+    position: absolute;
+    top: 19.8em;
+    background-color: rgba(25, 27, 114, 0.75);
+    color: #fff;
+    padding: 1.2em;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+    box-shadow: var(--soft-shadow);
+}
+
+.hero article p {
+    padding: 1em 0;
+}
+
+
+/***********************************************
+ * 5. CONTENT SECTIONS
+ ***********************************************/
+section {
+    margin: 40px 0;
+    padding: 0;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: .7em 0;
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 15px;
+}
+
+section p {
+    background: #ffffff;
+    padding: 1em 1.2em;
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 20px;
+}
+
+
+/***********************************************
+ * 6. FOOTER
+ ***********************************************/
+footer {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Social media area */
+.socialmedia {
+    margin: 10px 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* Footer images */
+footer nav a img {
+    width: 45px;
+    height: auto;
+    margin-top: 8px;
+    filter: drop-shadow(0 0 5px #00000044);
+}
