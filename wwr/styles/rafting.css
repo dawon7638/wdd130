@@ -324,7 +324,6 @@ form {
  ***********************************************/
 .employee {   
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
     width: 100%;
 
