@@ -1,5 +1,5 @@
 /***********************************************
- * 1. ROOT VARIABLES
+ * ROOT VARIABLES
  ***********************************************/
 :root {
     --primary-color: #191b72;     /* Royal blue */
@@ -13,7 +13,7 @@
 }
 
 /***********************************************
- * 2. GLOBAL RESETS & BASE STYLING
+ * GLOBAL RESETS & BASE STYLING
  ***********************************************/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -40,7 +40,7 @@ p, section, article, nav {
 }
 
 /***********************************************
- * 3. HEADER
+ * HEADER
  ***********************************************/
 header {
     padding: 1em;
@@ -75,9 +75,11 @@ header nav a {
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
-
 /***********************************************
- * 4. HERO SECTION
+ * ABOUT US PAGE --BEGIN--
+ ***********************************************/
+/***********************************************
+ * HERO SECTION
  ***********************************************/
 .hero {
     position: relative;
@@ -130,7 +132,7 @@ header nav a {
 }
 
 /***********************************************
- * 5. HISTORY SECTION
+ * HISTORY SECTION
  ***********************************************/
 section {
     margin: 40px 0;
@@ -170,7 +172,7 @@ section h2 {
 }
 
 /***********************************************
- * 6. ADVENTURE AWAITS SECTION
+ * ADVENTURE AWAITS SECTION
  ***********************************************/
 .adventure {
     display: flex;
@@ -188,9 +190,159 @@ section h2 {
 .adventure figcaption {
     text-align: center;
 }
+/***********************************************
+ * ABOUT US PAGE --END
+ ***********************************************/
+ 
+ /***********************************************
+ * CONTACT US PAGE --BEGIN--
+ ***********************************************/
+ /***********************************************
+ * COMPANY INFO
+ ***********************************************/
+.company_info {
+    text-align: center;
+    font-weight: bold;
+}
+
+.company_info h1, p {
+    padding: 0%;
+}
+
+ /***********************************************
+ * CONTACT AREA
+ ***********************************************/
+.contact {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    height: auto;
+}
+
+.contact iframe {
+    width: 400px;
+    height: 100%;
+}
+
+ 
+ /***********************************************
+ * FORM LAYOUT (Labels Left, Inputs Right)
+ ***********************************************/
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.form-row label {
+    width: 130px;      
+    font-weight: 600;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* Textarea row */
+.form-row.textarea-row {
+    display: grid;
+}
+
+.form-row.textarea-row textarea {
+    flex: 1;
+    height: 90px;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    resize: vertical;
+}
+
 
 /***********************************************
- * 7. FOOTER
+ * RADIO BUTTON GROUP
+ ***********************************************/
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+/***********************************************
+ * CHECKBOX STYLE
+ ***********************************************/
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/***********************************************
+ * BUTTON STYLE
+ ***********************************************/
+form button,
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #d9d9d9;
+    border: 1px solid #888;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background: #c5c5c5;
+}
+
+/***********************************************
+ * Form container spacing
+ ***********************************************/
+form {
+    width: 400px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+/***********************************************
+ * EMPLOYEE SECTION
+ ***********************************************/
+.employee {   
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.employee img {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+}
+
+.employee figcaption {
+    text-align: center;
+}
+
+/***********************************************
+ * FOOTER
  ***********************************************/
 footer {
     border-top: 1px solid #ccc;
