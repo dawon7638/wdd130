@@ -258,7 +258,6 @@ section h2 {
     height: 100%;
     border-radius: 6px;
 }
-
  
  /***********************************************
  * FORM LAYOUT (Labels Left, Inputs Right)
@@ -330,9 +329,9 @@ section h2 {
  * BUTTON STYLE
  ***********************************************/
 form button,
-form input[type="submit"] {
+form button[type="submit"] {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background: var(--primary-color);
     border: 1px solid #888;
     border-radius: 5px;
