@@ -491,6 +491,11 @@ form {
   transform: rotate(120deg);
 }
 
+.trips img {
+    width: 230px;
+    border-radius: 6px;
+}
+
 .reviews {
     background-color: #fff;
     padding: 5px;
