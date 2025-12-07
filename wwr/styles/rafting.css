@@ -126,12 +126,8 @@ header nav a {
     background-color: var(--primary-color);
     border-radius: 6px;
     list-style: none;
-
-}
-
-.booknow a {
-    color: white;
     text-decoration: none;
+
 }
 
 
