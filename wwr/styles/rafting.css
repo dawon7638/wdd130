@@ -45,7 +45,7 @@ p, section, article, nav {
 header {
     padding: 1em;
     margin: 0 auto;
-    background-color: #ffffff;
+    
     border-radius: 8px;
     box-shadow: var(--soft-shadow);
     display: grid;
@@ -107,6 +107,34 @@ header nav a {
     backdrop-filter: blur(2px);
 }
 
+.hero p {
+    position: absolute;
+    width: 75%;
+    color: white;
+    text-align: center;
+}
+
+
+.booknow a {
+    position: absolute;   
+    top: 30.8em;
+    left: 45%;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    list-style: none;
+
+}
+
+.booknow a {
+    color: white;
+    text-decoration: none;
+}
+
+
 .hero article {
     position: absolute;
     top: 19.8em;
@@ -125,11 +153,10 @@ header nav a {
     width: 125px;
     margin-left: 10px;
     box-shadow: var(--soft-shadow);
+    border-radius: 6px;
 }
 
-.hero article p {
-    padding: 1em 0;
-}
+
 
 /***********************************************
  * HISTORY SECTION
@@ -176,8 +203,12 @@ section h2 {
  ***********************************************/
 .adventure {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
+}
+
+.adventure figure {
+    width: 33%;
+    /* background-color: green; */
 }
 
 .adventure img {
@@ -191,7 +222,7 @@ section h2 {
     text-align: center;
 }
 /***********************************************
- * ABOUT US PAGE --END
+ * ABOUT US PAGE --END--
  ***********************************************/
  
  /***********************************************
@@ -339,6 +370,152 @@ form {
 .employee figcaption {
     text-align: center;
 }
+
+/***********************************************
+* CONTACT US PAGE --END--
+ ***********************************************/
+
+
+
+/***********************************************
+* HOME PAGE --BEGIN--
+ ***********************************************/
+.form_image {
+    width: 450px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+}
+
+
+/***********************************************
+* HOME PAGE --END--
+ ***********************************************/
+
+
+
+
+/***********************************************
+* TRIPS PAGE --BEGIN--
+ ***********************************************/
+/***********************************************
+* TRIPS PAGE --END--
+ ***********************************************/
+ .trips_page {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+ }
+
+
+ 
+ .trips h1 {
+     text-align: center;
+     margin-bottom: 1em;
+ }
+
+ .trips ul {
+     color: var(--primary-color);
+ }
+
+.age_duration1 h3 {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: .3em 0 .3em .3em;
+    width: 40%;
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 15px;
+}
+
+.age_duration1 ul  {
+    margin: 0 0 1.5rem 1.3rem;
+}
+
+.age_duration2 h3 {
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: .3em 0 .3em .3em;
+    width: 40%;
+    border-radius: 6px;
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 15px;
+}
+
+.age_duration2 ul  {
+    margin: 0 0 1.5rem 1.3rem;
+}
+
+.bookings ul {
+    list-style: none;
+    padding-left: 1.2rem;
+}
+
+.bookings ul li {
+    position: relative;
+    margin-bottom: 0.7rem;
+}
+
+.bookings ul li::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.7rem;
+  width: 10px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: rotate(0deg);
+}
+
+.bookings ul li::after {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.7rem;
+  width: 10px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: rotate(60deg);
+}
+
+.bookings ul li span::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.7rem;
+  width: 10px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: rotate(120deg);
+}
+
+.reviews {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    color: var(--primary-color);
+    height: auto;
+}
+
+.reviews p {
+    margin-top: 1rem;
+    font-size: small;
+}
+
+.reviews span {
+    font-weight: 700;
+}
+ .questions {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20rem;
+ }
+
 
 /***********************************************
  * FOOTER
