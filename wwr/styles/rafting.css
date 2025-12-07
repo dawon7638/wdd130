@@ -184,6 +184,7 @@ section h2 {
 }
 
 .history p {
+    color: var(--primary-color);
     background: #ffffff;
     padding: 1em 1.2em;
     border-radius: 6px;
@@ -219,6 +220,7 @@ section h2 {
 }
 
 .adventure figcaption {
+    color: var(--primary-color);
     text-align: center;
 }
 /***********************************************
@@ -232,6 +234,7 @@ section h2 {
  * COMPANY INFO
  ***********************************************/
 .company_info {
+    color: var(--primary-color);
     text-align: center;
     font-weight: bold;
 }
@@ -244,6 +247,7 @@ section h2 {
  * CONTACT AREA
  ***********************************************/
 .contact {
+    color: var(--primary-color);
     display: grid;
     grid-template-columns: 50fr 50fr;
     height: auto;
@@ -252,6 +256,7 @@ section h2 {
 .contact iframe {
     width: 400px;
     height: 100%;
+    border-radius: 6px;
 }
 
  
@@ -328,11 +333,12 @@ form button,
 form input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background: #d9d9d9;
+    background: var(--primary-color);
     border: 1px solid #888;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    color: #fff;
 }
 
 form button:hover,
@@ -357,7 +363,7 @@ form {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-
+    color: var(--primary-color);
 }
 
 .employee img {
@@ -398,9 +404,7 @@ form {
 /***********************************************
 * TRIPS PAGE --BEGIN--
  ***********************************************/
-/***********************************************
-* TRIPS PAGE --END--
- ***********************************************/
+
  .trips_page {
     display: grid;
     grid-template-columns: 70fr 30fr;
@@ -516,7 +520,9 @@ form {
     margin-left: 20rem;
  }
 
-
+/***********************************************
+* TRIPS PAGE --END--
+ ***********************************************/
 /***********************************************
  * FOOTER
  ***********************************************/
@@ -532,6 +538,7 @@ footer {
 
 footer p {
     margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
 .socialmedia {
